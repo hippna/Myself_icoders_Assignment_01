@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myself</title>
+    <style>
+
+        * {
+            padding: 10px;
+            margin: auto;
+            font-family: sans-serif;
+        }
+
+        .main {
+            background-color: rgb(33, 36, 49);
+            height: 100vh;
+            border-radius: 5px;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: auto;
+            
+            padding-right: 120vh;
+        }
+         .navbar ul li {
+             list-style: none;
+             display: inline-block;
+             position:relative;
+             margin: 0 20px;
+         }
+
+         .navbar ul li a {
+             text-decoration: none;
+             color: whitesmoke;
+             text-transform: uppercase;
+             font-size: bolder;
+         }
+        
+         .navbar ul li::after {
+             content: " ";
+             width: 0;
+             height: 3px;
+             background-color: aqua;
+             position: absolute;
+             right: 0;
+             left: 0;
+             bottom: -1px;
+             transition: 0.5s;
+         }
+
+         .navbar ul li:hover::after {
+             cursor: pointer;
+             width: 100%;
+         }
+
+         .content {
+             text-align: center;
+             color: beige;
+         }
+
+         .content h1 {
+             color: aqua;
+             font-size: 150px;
+         }
+
+         .content h1:hover::after {
+             
+             cursor: pointer;
+         }
+
+         .content p {
+             font-size: 30px;
+             font-style: italic;
+         }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <ul>
+                <li><a href="#">Schooling</a></li>
+                <li><a href="#">Likes</a></li>
+                <li><a href="#">Dislikes</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="heading">
+                <h1>--Myself--</h1>
+                <br>
+            </div>
+            <div class="body">
+                <p>
+                    My name is Siddhant Mehta, I am a student at Dr. BC Roy Engineering College.
+                    I am from Bihar but did my higher secondary at Kolkata, WB. I graduated my high school at age of 18 in 2021.
+                    I am fluent in hindi and able to speak in bengali too.
+                    My intrests are in computers and coding and I love to code at night. I love acoustic and soft music and can jam on hard hitting songs (depends on mood).
+
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
